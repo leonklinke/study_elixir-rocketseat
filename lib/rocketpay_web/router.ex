@@ -12,6 +12,7 @@ defmodule RocketpayWeb.Router do
     post "/user", UserController, :create
     post "/accounts/:id/deposit", AccountController, :deposit
     post "/accounts/:id/withdraw", AccountController, :withdraw
+    post "/accounts/transaction", AccountController, :transaction
   end
 
   # Enables LiveDashboard only for development
